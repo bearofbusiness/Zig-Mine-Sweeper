@@ -20,7 +20,7 @@ pub fn main() !void {
 
         const input = handleTurn();
 
-        //have the first move not be looseable
+        //have the first move not be loseable
         if (firstMove) {
             if (Board[input[1] * 10 + input[0]].isBomb) {
                 Board[input[1] * 10 + input[0]].isBomb = false;
